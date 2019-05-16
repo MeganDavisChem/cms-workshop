@@ -1,3 +1,6 @@
+"""
+Functions and script for geometry analysis
+"""
 #!/usr/bin/python3.4m
 
 import numpy
@@ -44,9 +47,7 @@ def bond_chk(bond_len, minm=0, maxm=1.5): # the '=num' sets defaults for the val
     True if bond
     False if not a bond
     """
-    print('doesthisprint')
     if not isinstance(bond_len, float):
-        print('doesthisprint')
         raise TypeError(F'bond_len must be type float. {bond_len}')
     if bond_len > minm and bond_len < maxm:
         return 1 
